@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { runFireworks } from '../utils/utils'
 
 
-const success = () => {
+const Success = () => {
     const { setCartItems, setTotalPrice, setTotalQuantity } = useStateContext();
 
     useEffect(() => {
@@ -40,4 +40,4 @@ const success = () => {
     )
 }
 
-export default success
+export default Success
