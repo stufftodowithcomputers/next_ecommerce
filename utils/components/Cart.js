@@ -35,7 +35,7 @@ const Cart = () => {
 
     return (
         <div className='fixed left-0 top-0 z-50 w-[100vw] bg-white-rgba' ref={cartRef}>
-            <div className='relative h-[100vh] w-[400px] bg-white float-right py-5 px-2 md:w-[600px] md:p-2'>
+            <div className='relative h-[100vh] w-full bg-white float-right py-5 px-2 md:w-[600px] md:p-2'>
 
                 <button onClick={() => setShowCart(false)} className='flex items-center text-xl font-semibold cursor-pointer gap-0.5 ml-2'>
                     <AiOutlineLeft />
