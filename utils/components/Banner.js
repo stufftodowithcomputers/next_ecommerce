@@ -8,7 +8,7 @@ const Banner = ({ banner }) => {
       <img className='absolute w-[77%] h-[62%] top-[5%] right[-6%] md:top-0 md:right-20 w-[450px] h-[450px]' src={urlFor(banner.image)} alt='HEADPHONES' />
       <div className='p-6'>
         <p className='font-semibold text-lg mb-4'>{ banner.smallText }</p>
-        <h3 className='font-bold text-3xl md:text-6xl mb-4'>{ banner.midText }</h3>
+        <h3 className='text-white font-bold text-3xl md:text-6xl mb-4'>{ banner.midText }</h3>
         <h1 className='text-white font-bold text-4xl md:text-9xl mb-4'>{ banner.largeText1 }</h1>
 
         <div className='mt-6'>
