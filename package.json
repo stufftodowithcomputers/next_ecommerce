@@ -3,18 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "concurrently \"next dev\" \"cd store && sanity start\"",
+    "build": "echo 'Building Sanity to public/store' && cd store && sanity build ../public/store -y && cd .. && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/cli": "^2.30.0",
+    "@sanity/client": "^3.3.0",
+    "@sanity/image-url": "^1.0.1",
+    "@stripe/stripe-js": "^1.29.0",
+    "canvas-confetti": "^1.5.1",
+    "concurrently": "^7.1.0",
+    "dotenv": "^16.0.1",
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-hot-toast": "^2.2.0",
+    "react-icons": "^4.3.1",
+    "stripe": "^9.0.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.7",
     "eslint": "8.15.0",
-    "eslint-config-next": "12.1.6"
+    "eslint-config-next": "12.1.6",
+    "postcss": "^8.4.13",
+    "tailwindcss": "^3.0.24"
   }
 }
